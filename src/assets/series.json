@@ -186,15 +186,15 @@
     },
     {
       "name": "Nier",
-      "vglistIds": [1] // TODO: This is included as part of Drakengard right now...
+      "vglistIds": [1]
     },
     {
-      "name": "Drakengard",
+      "name": "Drakengard / Nier",
       "vglistIds": [343]
     },
     {
       "name": "Warhammer",
-      "vglistIds": [1] // TODO: Warhammer series doesn't really exist in vglist :|
+      "vglistIds": [1]
     },
     {
       "name": "Wolfenstein",
