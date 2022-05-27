@@ -9,6 +9,6 @@ To run locally, you'll want to have Node 16 and Yarn v1 installed.
 Then:
 - Clone the repo
 - Run `yarn install`
-- Run `yarn run vite`
+- Run `yarn dev`
 
 And then the site will be available at localhost:3000.
