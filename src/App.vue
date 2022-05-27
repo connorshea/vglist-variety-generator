@@ -5,7 +5,6 @@ import VarietyList from './components/VarietyList.vue'
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
   <VarietyList />
 </template>
 
