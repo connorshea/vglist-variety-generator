@@ -12,18 +12,20 @@ const count = computed(() => { return selectedSeriesList.value.length; })
   <h1>Variety List</h1>
   <h2>{{ count }} / {{ seriesList.length }}</h2>
 
-  <template v-for="series in seriesList" :key="series.name">
-    <div>
-      <input
-        type="checkbox"
-        :id="series.name"
-        :name="series.name"
-        :value="series"
-        v-model="selectedSeriesList"
-      />
-      <label :for="series.name">{{ series.name }}</label>
-    </div>
-  </template>
+  <div class="checkboxes-container">
+    <template v-for="series in seriesList" :key="series.name">
+      <div class="checkbox-container">
+        <input
+          type="checkbox"
+          :id="series.name"
+          :name="series.name"
+          :value="series"
+          v-model="selectedSeriesList"
+        />
+        <label :for="series.name">{{ series.name }}</label>
+      </div>
+    </template>
+  </div>
 </template>
 
 <style scoped>
@@ -36,10 +38,18 @@ label {
   font-weight: bold;
 }
 
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
+.checkboxes-container {
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.checkbox-container {
+  display: block;
+  text-align: left;
+  flex-grow: 1;
+  width: 33%;
+  margin-bottom: 15px;
 }
 </style>
