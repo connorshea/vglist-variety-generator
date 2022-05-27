@@ -21,7 +21,7 @@
       "vglistIds": [5]
     },
     {
-      "name": "Tales of.",
+      "name": "Tales of",
       "vglistIds": [7]
     },
     {
@@ -197,8 +197,8 @@
       "vglistIds": [1] // TODO: Warhammer series doesn't really exist in vglist :|
     },
     {
-      "name": "Breath of Fire", // TODO: REPLACE?
-      "vglistIds": [342]
+      "name": "Wolfenstein",
+      "vglistIds": [96]
     },
     {
       "name": "Dragon Quest",
@@ -273,7 +273,7 @@
       "vglistIds": [185]
     },
     {
-      "name": "SMT",
+      "name": "Shin Megami Tensei",
       "vglistIds": [21]
     },
     {
@@ -285,8 +285,8 @@
       "vglistIds": [51]
     },
     {
-      "name": "SaGa", // TODO: REPLACE
-      "vglistIds": [1] // TODO
+      "name": "Forza",
+      "vglistIds": [109]
     },
     {
       "name": "Total War",
@@ -297,8 +297,8 @@
       "vglistIds": [63]
     },
     {
-      "name": "Parasite Eve", // TODO: REPLACE
-      "vglistIds": [1] // TODO
+      "name": "Battlefield",
+      "vglistIds": [58]
     },
     {
       "name": "Mortal Kombat",
@@ -373,12 +373,12 @@
       "vglistIds": [32]
     },
     {
-      "name": "Shadow Hearts", // TODO: REPLACE
-      "vglistIds": [1] // TODO
+      "name": "Kirby",
+      "vglistIds": [28]
     },
     {
-      "name": "Bomberman", // TODO: REPLACE?
-      "vglistIds": [1] // TODO
+      "name": "RollerCoaster Tycoon",
+      "vglistIds": [352]
     },
     {
       "name": "Monster Hunter",
@@ -397,8 +397,8 @@
       "vglistIds": [1456]
     },
     {
-      "name": "Wild Arms", // TODO: REPLACE
-      "vglistIds": [271]
+      "name": "Civilization",
+      "vglistIds": [47]
     }
   ]
 }
