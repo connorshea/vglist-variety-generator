@@ -1,288 +1,288 @@
 {
   "series": [
     {
-      "name": "Mario Bros",
-      "vglistIds": [1] // TODO
+      "name": "Super Mario/Mario Bros",
+      "vglistIds": [10]
     },
     {
       "name": "Final Fantasy",
-      "vglistIds": [1] // TODO
+      "vglistIds": [4, 333]
     },
     {
       "name": "Legend of Zelda",
-      "vglistIds": [1] // TODO
+      "vglistIds": [8]
     },
     {
       "name": "Pikmin",
-      "vglistIds": [1] // TODO
+      "vglistIds": [442]
     },
     {
       "name": "Pokémon",
-      "vglistIds": [1] // TODO
+      "vglistIds": [5]
     },
     {
       "name": "Tales of.",
-      "vglistIds": [1] // TODO
+      "vglistIds": [7]
     },
     {
       "name": "Warcraft",
-      "vglistIds": [1] // TODO
+      "vglistIds": [301]
     },
     {
       "name": "Of Mana",
-      "vglistIds": [1] // TODO
+      "vglistIds": [137]
     },
     {
       "name": "The Elder Scrolls",
-      "vglistIds": [1] // TODO
+      "vglistIds": [110]
     },
     {
       "name": "Metal Gear",
-      "vglistIds": [1] // TODO
+      "vglistIds": [17]
     },
     {
       "name": "Fallout",
-      "vglistIds": [1] // TODO
+      "vglistIds": [75]
     },
     {
       "name": "God Of War",
-      "vglistIds": [1] // TODO
+      "vglistIds": [177]
     },
     {
       "name": "Doom",
-      "vglistIds": [1] // TODO
+      "vglistIds": [84]
     },
     {
       "name": "Tetris",
-      "vglistIds": [1] // TODO
+      "vglistIds": [284]
     },
     {
       "name": "Kingdom Hearts",
-      "vglistIds": [1] // TODO
+      "vglistIds": [112]
     },
     {
       "name": "Red Dead Redemption",
-      "vglistIds": [1] // TODO
+      "vglistIds": [408]
     },
     {
       "name": "Crash Bandicoot",
-      "vglistIds": [1] // TODO
+      "vglistIds": [59]
     },
     {
       "name": "Street Fighter",
-      "vglistIds": [1] // TODO
+      "vglistIds": [25]
     },
     {
       "name": "Donkey Kong",
-      "vglistIds": [1] // TODO
+      "vglistIds": [31, 310]
     },
     {
       "name": "Tekken",
-      "vglistIds": [1] // TODO
+      "vglistIds": [49]
     },
     {
       "name": "Chrono Series",
-      "vglistIds": [1] // TODO
+      "vglistIds": [327]
     },
     {
-      "name": "Rachet and Clank",
-      "vglistIds": [1] // TODO
+      "name": "Ratchet and Clank",
+      "vglistIds": [83]
     },
     {
       "name": "Borderlands",
-      "vglistIds": [1] // TODO
+      "vglistIds": [355]
     },
     {
       "name": "Call of Duty",
-      "vglistIds": [1] // TODO
+      "vglistIds": [11]
     },
     {
       "name": "The Sims",
-      "vglistIds": [1] // TODO
+      "vglistIds": [19]
     },
     {
       "name": "Dead Space",
-      "vglistIds": [1] // TODO
+      "vglistIds": [274]
     },
     {
       "name": "Age of Empires",
-      "vglistIds": [1] // TODO
+      "vglistIds": [171]
     },
     {
       "name": "Need for Speed",
-      "vglistIds": [1] // TODO
+      "vglistIds": [13]
     },
     {
       "name": "Animal Crossing",
-      "vglistIds": [1] // TODO
+      "vglistIds": [207]
     },
     {
       "name": "Harvest Moon",
-      "vglistIds": [1] // TODO
+      "vglistIds": [22]
     },
     {
       "name": "Fable",
-      "vglistIds": [1] // TODO
+      "vglistIds": [222]
     },
     {
       "name": "Prince of Persia",
-      "vglistIds": [1] // TODO
+      "vglistIds": [100]
     },
     {
       "name": "Contra",
-      "vglistIds": [1] // TODO
+      "vglistIds": [91]
     },
     {
       "name": "Max Payne",
-      "vglistIds": [1] // TODO
+      "vglistIds": [530]
     },
     {
       "name": "Team Fortress",
-      "vglistIds": [1] // TODO
+      "vglistIds": [678]
     },
     {
       "name": "Ninja Gaiden",
-      "vglistIds": [1] // TODO
+      "vglistIds": [73]
     },
     {
       "name": "Punch-Out",
-      "vglistIds": [1] // TODO
+      "vglistIds": [768]
     },
     {
       "name": "Persona",
-      "vglistIds": [1] // TODO
+      "vglistIds": [148]
     },
     {
       "name": "Saints Row",
-      "vglistIds": [1] // TODO
+      "vglistIds": [336]
     },
     {
       "name": "Jak and Daxter",
-      "vglistIds": [1] // TODO
+      "vglistIds": [250]
     },
     {
       "name": "Bayonetta",
-      "vglistIds": [1] // TODO
+      "vglistIds": [570]
     },
     {
       "name": "Medal of Honor",
-      "vglistIds": [1] // TODO
+      "vglistIds": [60]
     },
     {
       "name": "Guilty Gear",
-      "vglistIds": [1] // TODO
+      "vglistIds": [176]
     },
     {
       "name": "Starcraft",
-      "vglistIds": [1] // TODO
+      "vglistIds": [303]
     },
     {
       "name": "Dead or Alive",
-      "vglistIds": [1] // TODO
+      "vglistIds": [65]
     },
     {
       "name": "Deus Ex",
-      "vglistIds": [1] // TODO
+      "vglistIds": [244]
     },
     {
       "name": "Nier",
-      "vglistIds": [1] // TODO
+      "vglistIds": [1] // TODO: This is included as part of Drakengard right now...
     },
     {
-      "name": "Drakengard",
-      "vglistIds": [1] // TODO
+      "name": "Drakengard", // TODO: Remove?
+      "vglistIds": [343]
     },
     {
       "name": "Warhammer",
-      "vglistIds": [1] // TODO
+      "vglistIds": [1] // TODO: Warhammer series doesn't really exist in vglist :|
     },
     {
-      "name": "Breath of Fire",
-      "vglistIds": [1] // TODO
+      "name": "Breath of Fire", // TODO: REPLACE?
+      "vglistIds": [342]
     },
     {
       "name": "Dragon Quest",
-      "vglistIds": [1] // TODO
+      "vglistIds": [41]
     },
     {
       "name": "Halo",
-      "vglistIds": [1] // TODO
+      "vglistIds": [82]
     },
     {
       "name": "GTA",
-      "vglistIds": [1] // TODO
+      "vglistIds": [55]
     },
     {
       "name": "Diablo",
-      "vglistIds": [1] // TODO
+      "vglistIds": [384]
     },
     {
       "name": "Assassin's Creed",
-      "vglistIds": [1] // TODO
+      "vglistIds": [48]
     },
     {
       "name": "Metroid",
-      "vglistIds": [1] // TODO
+      "vglistIds": [80]
     },
     {
-      "name": "Bioshock",
-      "vglistIds": [1] // TODO
+      "name": "BioShock",
+      "vglistIds": [508]
     },
     {
       "name": "Mass Effect",
-      "vglistIds": [1] // TODO
+      "vglistIds": [430]
     },
     {
       "name": "Star Fox",
-      "vglistIds": [1] // TODO
+      "vglistIds": [156]
     },
     {
       "name": "Last of Us",
-      "vglistIds": [1] // TODO
+      "vglistIds": [700]
     },
     {
       "name": "Fire Emblem",
-      "vglistIds": [1] // TODO
+      "vglistIds": [40]
     },
     {
       "name": "Far Cry",
-      "vglistIds": [1] // TODO
+      "vglistIds": [121]
     },
     {
       "name": "Resident Evil",
-      "vglistIds": [1] // TODO
+      "vglistIds": [24]
     },
     {
       "name": "Tony Hawk Pro Skater",
-      "vglistIds": [1] // TODO
+      "vglistIds": [39]
     },
     {
       "name": "Gran Turismo",
-      "vglistIds": [1] // TODO
+      "vglistIds": [89]
     },
     {
       "name": "Rayman",
-      "vglistIds": [1] // TODO
+      "vglistIds": [87]
     },
     {
       "name": "Castlevania",
-      "vglistIds": [1] // TODO
+      "vglistIds": [9]
     },
     {
       "name": "Soul Calibur",
-      "vglistIds": [1] // TODO
+      "vglistIds": [185]
     },
     {
       "name": "SMT",
-      "vglistIds": [1] // TODO
+      "vglistIds": [21]
     },
     {
       "name": "Yakuza",
-      "vglistIds": [1] // TODO
+      "vglistIds": [130]
     },
     {
       "name": "Command and Conq.",
-      "vglistIds": [1] // TODO
+      "vglistIds": [51]
     },
     {
       "name": "SaGa", // TODO: REPLACE
@@ -290,11 +290,11 @@
     },
     {
       "name": "Total War",
-      "vglistIds": [1] // TODO
+      "vglistIds": [85]
     },
     {
       "name": "Phantasy Star",
-      "vglistIds": [1] // TODO
+      "vglistIds": [63]
     },
     {
       "name": "Parasite Eve", // TODO: REPLACE
@@ -302,75 +302,75 @@
     },
     {
       "name": "Mortal Kombat",
-      "vglistIds": [1] // TODO
+      "vglistIds": [33]
     },
     {
       "name": "Megaman",
-      "vglistIds": [1] // TODO
+      "vglistIds": [57] // TODO: also get battle network? (id 139)
     },
     {
       "name": "Uncharted",
-      "vglistIds": [1] // TODO
+      "vglistIds": [205]
     },
     {
       "name": "Tomb Raider",
-      "vglistIds": [1] // TODO
+      "vglistIds": [27]
     },
     {
       "name": "Portal",
-      "vglistIds": [1] // TODO
+      "vglistIds": [516]
     },
     {
       "name": "Sonic the Hedgehog",
-      "vglistIds": [1] // TODO
+      "vglistIds": [1]
     },
     {
       "name": "The Witcher",
-      "vglistIds": [1] // TODO
+      "vglistIds": [308]
     },
     {
       "name": "Half-Life",
-      "vglistIds": [1] // TODO
+      "vglistIds": [107]
     },
     {
       "name": "Spyro the Dragon",
-      "vglistIds": [1] // TODO
+      "vglistIds": [103]
     },
     {
       "name": "Dark Souls",
-      "vglistIds": [1] // TODO
+      "vglistIds": [436]
     },
     {
       "name": "Devil May Cry",
-      "vglistIds": [1] // TODO
+      "vglistIds": [253]
     },
     {
       "name": "Silent Hill",
-      "vglistIds": [1] // TODO
+      "vglistIds": [98]
     },
     {
       "name": "Hitman",
-      "vglistIds": [1] // TODO
+      "vglistIds": [142]
     },
     {
       "name": "Dragon Age",
-      "vglistIds": [1] // TODO
+      "vglistIds": [539]
     },
     {
       "name": "Gears of War",
-      "vglistIds": [1] // TODO
+      "vglistIds": [422]
     },
     {
       "name": "Banjo-Kazooie",
-      "vglistIds": [1] // TODO
+      "vglistIds": [300]
     },
     {
       "name": "Counter-Strike",
-      "vglistIds": [1] // TODO
+      "vglistIds": [209]
     },
     {
       "name": "Worms",
-      "vglistIds": [1] // TODO
+      "vglistIds": [32]
     },
     {
       "name": "Shadow Hearts", // TODO: REPLACE
@@ -382,23 +382,23 @@
     },
     {
       "name": "Monster Hunter",
-      "vglistIds": [1] // TODO
+      "vglistIds": [78]
     },
     {
       "name": "Shenmue",
-      "vglistIds": [1] // TODO
+      "vglistIds": [540]
     },
     {
       "name": "Watch Dogs",
-      "vglistIds": [1] // TODO
+      "vglistIds": [872]
     },
     {
       "name": "Dishonored",
-      "vglistIds": [1] // TODO
+      "vglistIds": [1456]
     },
     {
       "name": "Wild Arms", // TODO: REPLACE
-      "vglistIds": [1] // TODO
+      "vglistIds": [271]
     }
   ]
 }
