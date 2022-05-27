@@ -1,0 +1,404 @@
+{
+  "series": [
+    {
+      "name": "Mario Bros",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Final Fantasy",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Legend of Zelda",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Pikmin",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Pokémon",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Tales of.",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Warcraft",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Of Mana",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "The Elder Scrolls",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Metal Gear",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Fallout",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "God Of War",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Doom",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Tetris",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Kingdom Hearts",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Red Dead Redemption",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Crash Bandicoot",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Street Fighter",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Donkey Kong",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Tekken",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Chrono Series",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Rachet and Clank",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Borderlands",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Call of Duty",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "The Sims",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Dead Space",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Age of Empires",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Need for Speed",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Animal Crossing",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Harvest Moon",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Fable",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Prince of Persia",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Contra",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Max Payne",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Team Fortress",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Ninja Gaiden",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Punch-Out",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Persona",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Saints Row",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Jak and Daxter",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Bayonetta",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Medal of Honor",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Guilty Gear",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Starcraft",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Dead or Alive",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Deus Ex",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Nier",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Drakengard",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Warhammer",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Breath of Fire",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Dragon Quest",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Halo",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "GTA",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Diablo",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Assassin's Creed",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Metroid",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Bioshock",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Mass Effect",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Star Fox",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Last of Us",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Fire Emblem",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Far Cry",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Resident Evil",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Tony Hawk Pro Skater",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Gran Turismo",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Rayman",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Castlevania",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Soul Calibur",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "SMT",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Yakuza",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Command and Conq.",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "SaGa", // TODO: REPLACE
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Total War",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Phantasy Star",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Parasite Eve", // TODO: REPLACE
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Mortal Kombat",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Megaman",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Uncharted",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Tomb Raider",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Portal",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Sonic the Hedgehog",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "The Witcher",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Half-Life",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Spyro the Dragon",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Dark Souls",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Devil May Cry",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Silent Hill",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Hitman",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Dragon Age",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Gears of War",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Banjo-Kazooie",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Counter-Strike",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Worms",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Shadow Hearts", // TODO: REPLACE
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Bomberman", // TODO: REPLACE?
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Monster Hunter",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Shenmue",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Watch Dogs",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Dishonored",
+      "vglistIds": [1] // TODO
+    },
+    {
+      "name": "Wild Arms", // TODO: REPLACE
+      "vglistIds": [1] // TODO
+    }
+  ]
+}
