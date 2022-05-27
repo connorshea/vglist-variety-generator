@@ -9,7 +9,7 @@
       "vglistIds": [4, 333]
     },
     {
-      "name": "Legend of Zelda",
+      "name": "The Legend of Zelda",
       "vglistIds": [8]
     },
     {
@@ -189,7 +189,7 @@
       "vglistIds": [1] // TODO: This is included as part of Drakengard right now...
     },
     {
-      "name": "Drakengard", // TODO: Remove?
+      "name": "Drakengard",
       "vglistIds": [343]
     },
     {
@@ -209,7 +209,7 @@
       "vglistIds": [82]
     },
     {
-      "name": "GTA",
+      "name": "Grand Theft Auto",
       "vglistIds": [55]
     },
     {
@@ -305,8 +305,8 @@
       "vglistIds": [33]
     },
     {
-      "name": "Megaman",
-      "vglistIds": [57] // TODO: also get battle network? (id 139)
+      "name": "Mega Man",
+      "vglistIds": [57]
     },
     {
       "name": "Uncharted",
