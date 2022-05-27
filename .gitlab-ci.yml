@@ -1,0 +1,19 @@
+image: node:16
+pages:
+  stage: deploy
+  cache:
+    key:
+      files:
+        - package-lock.json
+      prefix: yarn
+    paths:
+      - node_modules/
+  script:
+    - yarn install --frozen-lockfile
+    - yarn run build
+    - cp -a dist/. public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
