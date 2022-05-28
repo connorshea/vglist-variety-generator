@@ -143,7 +143,7 @@ const gameSeriesInLibrary = computed(() => {
 <template>
   <h1>Variety List</h1>
   <a v-if="!authenticated" :href="`https://vglist.co/settings/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code`">
-    Connect
+    Connect your vglist account
   </a>
   <VarietyList
     :game-series-in-library="gameSeriesInLibrary"
