@@ -50,7 +50,14 @@ input[type="checkbox"] {
   row-gap: 1rem;
 }
 
-@media screen and (max-width: 800px) {
+/* Go down to three columns on <1200px, 2 columns <900px, and 1 column below 400px. */
+@media screen and (max-width: 1200px) {
+  .checkboxes-container {
+    grid-template-columns: 1fr 1fr auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .checkboxes-container {
     grid-template-columns: 1fr auto;
   }
