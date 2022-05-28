@@ -154,7 +154,7 @@ const gameSeriesInLibrary = computed(() => {
     <a class="vglist-connect-link align-right" v-if="!authenticated" :href="`https://vglist.co/settings/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code`">
       <button class="vglist-connect-button">Connect your vglist account</button>
     </a>
-    <p class="align-right" v-else>
+    <p class="align-right" v-else-if="username !== null">
       Logged in as {{ username }}
     </p>
   </Teleport>
