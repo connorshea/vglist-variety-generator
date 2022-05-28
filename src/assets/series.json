@@ -185,16 +185,12 @@
       "vglistIds": [244]
     },
     {
-      "name": "Nier",
-      "vglistIds": [1]
-    },
-    {
       "name": "Drakengard / Nier",
       "vglistIds": [343]
     },
     {
-      "name": "Warhammer",
-      "vglistIds": [1]
+      "name": "Tom Clancy",
+      "vglistIds": [64, 155, 216]
     },
     {
       "name": "Wolfenstein",
@@ -399,6 +395,10 @@
     {
       "name": "Civilization",
       "vglistIds": [47]
+    },
+    {
+      "name": "Super Smash Bros.",
+      "vglistIds": [326]
     }
   ]
 }
