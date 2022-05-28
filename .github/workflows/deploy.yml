@@ -29,8 +29,14 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
-      - run: yarn install --frozen-lockfile
-      - run: yarn run build
+      - name: Yarn Install
+        run: yarn install --frozen-lockfile
+
+      - name: Build
+        run: yarn run build
+        env:
+          VITE_VGLIST_CLIENT_ID: ${{ secrets.VITE_VGLIST_CLIENT_ID }}
+          VITE_VGLIST_REDIRECT_URI: ${{ secrets.VITE_VGLIST_REDIRECT_URI }}
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
