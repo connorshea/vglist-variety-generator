@@ -56,7 +56,9 @@ watch(() => props.requestsCompleted, (newRequestsCompleted) => {
 </script>
 
 <template>
-  <h2>{{ count }} / {{ seriesList.length }}</h2>
+  <Teleport to="#counter-container">
+    <h2><strong>{{ count }}</strong> / {{ seriesList.length }}</h2>
+  </Teleport>
 
   <div class="checkboxes-container">
     <template v-for="series in seriesList" :key="series.name">
@@ -75,22 +77,18 @@ watch(() => props.requestsCompleted, (newRequestsCompleted) => {
 </template>
 
 <style scoped>
-a {
-  color: #42b983;
-}
-
-label {
-  margin: 0 0.5em;
-  cursor: pointer;
-  font-weight: bold;
+h2 strong {
+  color: #5856d6;
+  font-size: 40px;
 }
 
 input[type="checkbox"] {
   cursor: pointer;
+  accent-color: #5856d6;
 }
 
 .checkboxes-container {
-  max-width: 70vw;
+  max-width: 100%;
   margin: 2rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr auto;

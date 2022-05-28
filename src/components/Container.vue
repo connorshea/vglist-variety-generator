@@ -141,10 +141,10 @@ const gameSeriesInLibrary = computed(() => {
 </script>
 
 <template>
-  <h1>Variety List</h1>
   <a v-if="!authenticated" :href="`https://vglist.co/settings/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code`">
-    Connect your vglist account
+    <button>Connect your vglist account</button>
   </a>
+
   <VarietyList
     :game-series-in-library="gameSeriesInLibrary"
     :requests-completed="requestsCompleted"
@@ -152,13 +152,13 @@ const gameSeriesInLibrary = computed(() => {
 </template>
 
 <style scoped>
-a {
-  color: #42b983;
-}
+button {
+  background-color: #5856d6;
+  color: white;
+  padding: 12px 25px;
 
-label {
-  margin: 0 0.5em;
-  cursor: pointer;
-  font-weight: bold;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
 }
 </style>
