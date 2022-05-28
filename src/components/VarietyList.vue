@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { computed } from '@vue/reactivity';
-import { ref } from 'vue'
-import { series } from '../assets/series.json'
+import { ref, computed } from 'vue';
+import { series } from '../assets/series.json';
 
 const seriesList = series;
 const selectedSeriesList = ref([]);
-const count = computed(() => { return selectedSeriesList.value.length; })
+const count = computed(() => selectedSeriesList.value.length);
 </script>
 
 <template>
