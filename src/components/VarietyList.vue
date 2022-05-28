@@ -35,21 +35,37 @@ a {
 
 label {
   margin: 0 0.5em;
+  cursor: pointer;
   font-weight: bold;
 }
 
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
 .checkboxes-container {
-  width: 70vw;
-  margin: auto;
-  display: flex;
-  flex-flow: row wrap;
+  max-width: 70vw;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  row-gap: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .checkboxes-container {
+    grid-template-columns: 1fr auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .checkboxes-container {
+    grid-template-columns: max-content;
+  }
 }
 
 .checkbox-container {
-  display: block;
+  display: flex;
+  align-items: baseline;
   text-align: left;
-  flex-grow: 1;
-  width: 33%;
-  margin-bottom: 15px;
 }
 </style>
