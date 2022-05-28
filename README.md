@@ -2,6 +2,8 @@
 
 Based on an image that floated around social media, where people would share an image with a list of 100 game series' and fill out which game series' they've played. For the hell of it, I've created a little website that uses the [vglist](https://vglist.co) API to fill it out for you.
 
+Based on [the original template made by ZweiDouble](https://twitter.com/ZweiDouble/status/1528733569224409090).
+
 Built with Vue 3, TypeScript, and Vite.
 
 ## Setup Instructions
