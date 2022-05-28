@@ -119,7 +119,7 @@ const populateGamePurchases = () => {
       let pageInfo = queryJson.data.currentUser.gamePurchases.pageInfo;
       startCursor.value = pageInfo.endCursor;
       if (pageInfo.hasNextPage) {
-        // Throttle the requests so it doesn't spam the GraphQL endpoints.
+        // Throttle the requests so it doesn't spam the GraphQL endpoint.
         setTimeout(() => {
           populateGamePurchases();
         }, 500);
