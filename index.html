@@ -5,24 +5,28 @@
     <link rel="icon" href="/vglist-variety-generator/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vglist Variety List Generator</title>
-    <script type="module" crossorigin src="/vglist-variety-generator/assets/index.415337e7.js"></script>
-    <link rel="stylesheet" href="/vglist-variety-generator/assets/index.7d30c784.css">
+    <script type="module" crossorigin src="/vglist-variety-generator/assets/index.2a1e7170.js"></script>
+    <link rel="stylesheet" href="/vglist-variety-generator/assets/index.317983d9.css">
   </head>
   <body>
     <div id="app-container">
       <header>
-        <div>
+        <div class="header-text">
           <h1>vglist Variety List Generator</h1>
-          <p class="left-align">Which of these video game series' have you played?</p>
+          <p>Which of these video game series' have you played?</p>
         </div>
-        <div id="counter-container"></div>
+        <!-- These containers will be teleported in from other components. -->
+        <div class="teleported-containers align-right align-center-mobile">
+          <div id="counter-container"></div>
+          <div id="connect-container"></div>
+        </div>
       </header>
       <div id="app"></div>
       <br>
       <footer>
-        <p class="right-align">
-          Powered by <a href="https://vglist.co">vglist.co</a> |
-          <a href="https://github.com/connorshea/vglist-variety-generator">Source code</a>
+        <p class="align-right align-center-mobile">
+          <a href="https://github.com/connorshea/vglist-variety-generator">Source code</a> |
+          Powered by <a href="https://vglist.co">vglist.co</a>
         </p>
       </footer>
     </div>
