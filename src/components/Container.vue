@@ -117,8 +117,7 @@ const populateGamePurchases = () => {
       gamePurchases.value = gamePurchases.value.concat(queryJson.data.currentUser.gamePurchases.nodes);
       let pageInfo = queryJson.data.currentUser.gamePurchases.pageInfo;
       startCursor.value = pageInfo.endCursor;
-      // TODO: Remove this, just making this bail out after getting 100 games because otherwise it takes a long time.
-      if (pageInfo.hasNextPage && gamePurchases.value.length < 50) {
+      if (pageInfo.hasNextPage) {
         // Throttle the requests so it doesn't spam the GraphQL endpoint.
         setTimeout(() => {
           populateGamePurchases();

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, watch } from 'vue';
+import { ref, computed, watch, Ref } from 'vue';
 import { series } from '../assets/series.json';
 
 interface Props {
@@ -7,20 +7,49 @@ interface Props {
   requestsCompleted: boolean
 }
 
+type Series = {
+  name: string;
+  vglistIds: number[];
+}
+
 const loading = ref(true);
 const props = defineProps<Props>();
 
-const seriesList = series;
-const selectedSeriesList = ref([]);
+const seriesList: Series[] = series;
+// The selected series', for representing the list of checkboxes.
+const selectedSeriesList: Ref<Series[]> = ref([]);
+// Pull all the series IDs out of selectedSeriesList.
+const selectedSeriesListSeriesIds = computed(() => {
+  return selectedSeriesList.value.flatMap((seriesObj) => seriesObj.vglistIds);
+});
 const count = computed(() => selectedSeriesList.value.length);
 
+// When the requests complete, auto-populate selectedSeriesList.
 watch(() => props.requestsCompleted, (newRequestsCompleted) => {
   if (newRequestsCompleted) {
-    let seriesIds = props.gameSeriesInLibrary.map((seriesId) => parseInt(seriesId));
-    console.log(`seriesIds`);
-    console.log(seriesIds);
-    // TODO: grab all the series IDs from the GraphQL requests and find the corresponding series' in the series JSON blob.
+    // Grab all the series IDs from the GraphQL requests and find the
+    // corresponding series' in the series JSON blob.
 
+    // Get the seriesIds from GraphQL, and make them unique so we don't perform unnecessary loops.
+    const seriesIdsFromGraphQL = [...new Set(props.gameSeriesInLibrary.map((seriesId) => parseInt(seriesId)))];
+    const seriesIdsFromList = seriesList.flatMap((series) => series.vglistIds);
+
+    // Intersect the series IDs in the static list and the seriesIds from the
+    // GraphQL API, and then iterate over them.
+    for (const seriesId of seriesIdsFromGraphQL.filter(value => seriesIdsFromList.includes(value))) {
+      // Skip this if it's already represented by the selectedSeriesList, no
+      // need to try and populate it again.
+      if (selectedSeriesListSeriesIds.value.includes(seriesId)) {
+        continue;
+      }
+
+      // Try to find the series in the seriesList using the seriesId, and then
+      // append the series object to the selectedSeriesList if it is found.
+      let seriesObj = seriesList.find((series) => series.vglistIds.includes(seriesId)) ?? null;
+      if (seriesObj !== null) {
+        selectedSeriesList.value.push(seriesObj);
+      }
+    }
     loading.value = false;
   }
 });
