@@ -46,7 +46,6 @@ const getAccessToken = (authorizationCode: string) => {
 
 const setAccessToken = (data: any) => {
   if (!data.error) {
-    console.log(data);
     accessToken.value = data.access_token
     authenticated.value = true;
     populateGamePurchases();
@@ -118,7 +117,8 @@ const populateGamePurchases = () => {
       gamePurchases.value = gamePurchases.value.concat(queryJson.data.currentUser.gamePurchases.nodes);
       let pageInfo = queryJson.data.currentUser.gamePurchases.pageInfo;
       startCursor.value = pageInfo.endCursor;
-      if (pageInfo.hasNextPage) {
+      // TODO: Remove this, just making this bail out after getting 100 games because otherwise it takes a long time.
+      if (pageInfo.hasNextPage && gamePurchases.value.length < 50) {
         // Throttle the requests so it doesn't spam the GraphQL endpoint.
         setTimeout(() => {
           populateGamePurchases();
@@ -146,7 +146,10 @@ const gameSeriesInLibrary = computed(() => {
   <a v-if="!authenticated" :href="`https://vglist.co/settings/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code`">
     Connect
   </a>
-  <VarietyList/>
+  <VarietyList
+    :game-series-in-library="gameSeriesInLibrary"
+    :requests-completed="requestsCompleted"
+  />
 </template>
 
 <style scoped>

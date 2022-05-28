@@ -1,10 +1,29 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
 import { series } from '../assets/series.json';
+
+interface Props {
+  gameSeriesInLibrary: string[]
+  requestsCompleted: boolean
+}
+
+const loading = ref(true);
+const props = defineProps<Props>();
 
 const seriesList = series;
 const selectedSeriesList = ref([]);
 const count = computed(() => selectedSeriesList.value.length);
+
+watch(() => props.requestsCompleted, (newRequestsCompleted) => {
+  if (newRequestsCompleted) {
+    let seriesIds = props.gameSeriesInLibrary.map((seriesId) => parseInt(seriesId));
+    console.log(`seriesIds`);
+    console.log(seriesIds);
+    // TODO: grab all the series IDs from the GraphQL requests and find the corresponding series' in the series JSON blob.
+
+    loading.value = false;
+  }
+});
 </script>
 
 <template>
