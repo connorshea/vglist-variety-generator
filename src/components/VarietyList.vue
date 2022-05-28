@@ -5,6 +5,7 @@ import { series } from '../assets/series.json';
 interface Props {
   gameSeriesInLibrary: string[]
   requestsCompleted: boolean
+  loading: boolean
 }
 
 type Series = {
@@ -12,7 +13,6 @@ type Series = {
   vglistIds: number[];
 }
 
-const loading = ref(true);
 const props = defineProps<Props>();
 
 const seriesList: Series[] = series;
@@ -50,7 +50,6 @@ watch(() => props.requestsCompleted, (newRequestsCompleted) => {
         selectedSeriesList.value.push(seriesObj);
       }
     }
-    loading.value = false;
   }
 });
 </script>
@@ -69,6 +68,7 @@ watch(() => props.requestsCompleted, (newRequestsCompleted) => {
           :name="series.name"
           :value="series"
           v-model="selectedSeriesList"
+          :disabled="loading"
         />
         <label :for="series.name">{{ series.name }}</label>
       </div>

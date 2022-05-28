@@ -23,6 +23,8 @@ let accessToken: Ref<string | null> = ref(null);
 let gamePurchases: Ref<GamePurchase[]> = ref([]);
 const authenticated = ref(false);
 const requestsCompleted = ref(false);
+const loading = ref(false);
+const username: Ref<string | null> = ref(null);
 
 const getAccessToken = (authorizationCode: string) => {
   const url = 'https://vglist.co/settings/oauth/token';
@@ -68,6 +70,7 @@ if (codeInUrl.value !== null) {
 const gamePurchasesQuery = `
   query($startCursor: String) { 
     currentUser {
+      username
       gamePurchases(after: $startCursor) {
         pageInfo {
           endCursor
@@ -91,6 +94,8 @@ let startCursor: Ref<string | null> = ref(null);
 let variables = computed(() => ({ startCursor: startCursor.value }));
 
 const populateGamePurchases = () => {
+  loading.value = true;
+
   let url = 'https://vglist.co/graphql';
   let options = {
     method: 'POST',
@@ -114,6 +119,9 @@ const populateGamePurchases = () => {
 
       return response.json();
     }).then(queryJson => {
+      if (username.value === null) {
+        username.value = queryJson.data.currentUser.username;
+      }
       gamePurchases.value = gamePurchases.value.concat(queryJson.data.currentUser.gamePurchases.nodes);
       let pageInfo = queryJson.data.currentUser.gamePurchases.pageInfo;
       startCursor.value = pageInfo.endCursor;
@@ -124,6 +132,7 @@ const populateGamePurchases = () => {
         }, 500);
       } else {
         requestsCompleted.value = true;
+        loading.value = false;
       }
     });
 };
@@ -145,11 +154,17 @@ const gameSeriesInLibrary = computed(() => {
     <a class="vglist-connect-link align-right" v-if="!authenticated" :href="`https://vglist.co/settings/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code`">
       <button class="vglist-connect-button">Connect your vglist account</button>
     </a>
+    <p class="align-right" v-else>
+      Logged in as {{ username }}
+    </p>
   </Teleport>
+
+  <p v-if="loading">Loading games...</p>
 
   <VarietyList
     :game-series-in-library="gameSeriesInLibrary"
     :requests-completed="requestsCompleted"
+    :loading="loading"
   />
 </template>
 
