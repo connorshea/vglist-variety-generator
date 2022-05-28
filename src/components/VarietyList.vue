@@ -57,7 +57,7 @@ watch(() => props.requestsCompleted, (newRequestsCompleted) => {
 
 <template>
   <Teleport to="#counter-container">
-    <h2><strong>{{ count }}</strong> / {{ seriesList.length }}</h2>
+    <h2 class="align-right align-center-mobile mb-0"><strong>{{ count }}</strong> / {{ seriesList.length }}</h2>
   </Teleport>
 
   <div class="checkboxes-container">
@@ -76,7 +76,7 @@ watch(() => props.requestsCompleted, (newRequestsCompleted) => {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 h2 strong {
   color: #5856d6;
   font-size: 40px;
@@ -108,7 +108,7 @@ input[type="checkbox"] {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .checkboxes-container {
     grid-template-columns: max-content;
   }

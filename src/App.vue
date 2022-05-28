@@ -14,7 +14,7 @@ const clientId = import.meta.env.VITE_VGLIST_CLIENT_ID;
   />
 </template>
 
-<style>
+<style lang="scss">
 * {
   box-sizing: border-box;
 }
@@ -24,7 +24,8 @@ a {
 }
 
 label {
-  margin: 0 0.5em;
+  margin: 0;
+  padding: 0 0.5em;
   cursor: pointer;
   font-weight: bold;
 }
@@ -44,27 +45,90 @@ body {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+
+  @media screen and (max-width: 450px) {
+    margin-top: 20px;
+    max-width: 90vw;
+  }
 }
 
-header h1 {
-  margin-bottom: 0;
-}
+header {
+  margin-bottom: 40px;
 
-header p {
-  margin-top: 5px;
+  h1 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 5px;
+  }
 }
 
 header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+
+  .header-text {
+    text-align: left;
+  }
+
+  @media screen and (max-width: 900px) {
+    flex-flow: row wrap;
+  }
 }
 
-.left-align {
+button.vglist-connect-button {
+  background-color: #5856d6;
+  color: white;
+  padding: 8px 15px;
+  cursor: pointer;
+
+  border: 0;
+  border-radius: 4px;
+  font-size: 14px;
+
+  transition: background-color 200ms;
+
+  &:hover {
+    background-color: darken(#5856d6, 15%);
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+a.vglist-connect-link {
+  display: block;
+  text-align: left;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.align-left {
   text-align: left;
 }
 
-.right-align {
+.align-right {
   text-align: right;
+}
+
+.align-center-mobile {
+  @media screen and (max-width: 900px) {
+    text-align: center;
+  }
+}
+
+.teleported-containers {
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
 </style>

@@ -141,9 +141,11 @@ const gameSeriesInLibrary = computed(() => {
 </script>
 
 <template>
-  <a v-if="!authenticated" :href="`https://vglist.co/settings/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code`">
-    <button>Connect your vglist account</button>
-  </a>
+  <Teleport to="#connect-container">
+    <a class="vglist-connect-link align-right" v-if="!authenticated" :href="`https://vglist.co/settings/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code`">
+      <button class="vglist-connect-button">Connect your vglist account</button>
+    </a>
+  </Teleport>
 
   <VarietyList
     :game-series-in-library="gameSeriesInLibrary"
@@ -151,15 +153,6 @@ const gameSeriesInLibrary = computed(() => {
   />
 </template>
 
-<style scoped>
-button {
-  background-color: #5856d6;
-  color: white;
-  padding: 12px 25px;
-  cursor: pointer;
+<style scoped lang="scss">
 
-  border: 0;
-  border-radius: 4px;
-  font-size: 16px;
-}
 </style>
