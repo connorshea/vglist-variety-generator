@@ -1,11 +1,17 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import VarietyList from './components/VarietyList.vue'
+import Container from './components/Container.vue'
+
+const redirectUri = import.meta.env.VITE_VGLIST_REDIRECT_URI;
+const clientId = import.meta.env.VITE_VGLIST_CLIENT_ID;
 </script>
 
 <template>
-  <VarietyList />
+  <Container
+    :client-id="clientId"
+    :redirect-uri="redirectUri"
+  />
 </template>
 
 <style>

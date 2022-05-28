@@ -6,3 +6,13 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
+
+// Environment variables.
+interface ImportMetaEnv {
+  readonly VITE_VGLIST_CLIENT_ID: string
+  readonly VITE_VGLIST_REDIRECT_URI: string
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv
+}

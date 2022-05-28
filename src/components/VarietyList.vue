@@ -8,7 +8,6 @@ const count = computed(() => selectedSeriesList.value.length);
 </script>
 
 <template>
-  <h1>Variety List</h1>
   <h2>{{ count }} / {{ seriesList.length }}</h2>
 
   <div class="checkboxes-container">
