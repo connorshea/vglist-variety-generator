@@ -69,12 +69,12 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
 
-  .header-text {
-    text-align: left;
-  }
-
   @media screen and (max-width: 900px) {
     flex-flow: row wrap;
+
+    .header-text {
+      width: 100%;
+    }
   }
 }
 
