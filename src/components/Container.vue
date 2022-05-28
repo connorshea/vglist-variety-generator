@@ -156,6 +156,7 @@ button {
   background-color: #5856d6;
   color: white;
   padding: 12px 25px;
+  cursor: pointer;
 
   border: 0;
   border-radius: 4px;

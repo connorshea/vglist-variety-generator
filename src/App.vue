@@ -46,9 +46,25 @@ body {
   margin-top: 60px;
 }
 
+header h1 {
+  margin-bottom: 0;
+}
+
+header p {
+  margin-top: 5px;
+}
+
 header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
 }
 </style>
