@@ -71,7 +71,7 @@ const gamePurchasesQuery = `
   query($startCursor: String) { 
     currentUser {
       username
-      gamePurchases(after: $startCursor) {
+      gamePurchases(first: 100, after: $startCursor) {
         pageInfo {
           endCursor
           hasNextPage
